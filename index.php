@@ -11,6 +11,9 @@ function fibonacci ($n)
 	}
 }
 echo "a ja placeholer gla mgr_test1";
-if(isset($_GET['fib']))
-	echo fibonacci($_GET['fib']);
+if(isset($_GET["fib"]))
+	echo "Wartosc fib dla ".$_GET["fib"]." wynosi ".fibonacci($_GET["fib"]);
+else {
+	echo "Nie podano fib";
+}
 ?>
